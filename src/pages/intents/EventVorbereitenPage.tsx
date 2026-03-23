@@ -297,7 +297,7 @@ export default function EventVorbereitenPage() {
             einladung_event: createRecordUrl(APP_IDS.EVENTPLANUNG, selectedEventId),
             einladung_gast: createRecordUrl(APP_IDS.GAESTEVERZEICHNIS, guestId),
             einladung_datum: today,
-            rsvp_status: { key: 'ausstehend', label: 'Ausstehend' },
+            rsvp_status: 'ausstehend' as any,
           })
         )
       );
@@ -343,7 +343,7 @@ export default function EventVorbereitenPage() {
         buchung_dienstleister: createRecordUrl(APP_IDS.DIENSTLEISTERVERZEICHNIS, provider.record_id),
         buchung_leistung: form.leistung,
         buchung_preis: form.preis ? parseFloat(form.preis) : undefined,
-        buchung_status: { key: 'angefragt', label: 'Angefragt' },
+        buchung_status: 'angefragt' as any,
       });
       setOpenBookingForms(prev => {
         const next = new Set(prev);
