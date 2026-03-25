@@ -1,0 +1,12 @@
+- Dienstleisterbuchungen (dienstleisterbuchungen): buchung_event[applookup/select], buchung_dienstleister[applookup/select], buchung_leistung[string/textarea], buchung_preis[number], buchung_status[lookup/select], buchung_zahlungsstatus[lookup/select], buchung_notizen[string/textarea]
+  → buchung_event links to app_id 69c159d0fc8e176dbef4c8b9
+  → buchung_dienstleister links to app_id 69c159cfc7199a62f1fbcf2b
+- Schnelleinladung (schnelleinladung): schnell_event[applookup/select], schnell_gast[applookup/select], schnell_einladungsdatum[date/date], schnell_notiz[string/textarea]
+  → schnell_event links to app_id 69c159d0fc8e176dbef4c8b9
+  → schnell_gast links to app_id 69c159c7934dbf179e30c8d8
+- Eventplanung (eventplanung): event_name[string/text], event_datum[date/datetimeminute], event_location_name[string/text], event_strasse[string/text], event_hausnummer[string/text], event_plz[string/text], event_stadt[string/text], event_geo[geo], event_gaestezahl[number], event_budget[number], event_status[lookup/select], event_beschreibung[string/textarea]
+- Dienstleisterverzeichnis (dienstleisterverzeichnis): dl_firmenname[string/text], dl_ansprechpartner_vorname[string/text], dl_ansprechpartner_nachname[string/text], dl_email[string/email], dl_telefon[string/tel], dl_kategorie[lookup/select], dl_website[string/url], dl_notizen[string/textarea]
+- Einladungen & RSVP (einladungen_rsvp): einladung_event[applookup/select], einladung_gast[applookup/select], einladung_datum[date/date], rsvp_status[lookup/select], rsvp_datum[date/date], einladung_notizen[string/textarea]
+  → einladung_event links to app_id 69c159d0fc8e176dbef4c8b9
+  → einladung_gast links to app_id 69c159c7934dbf179e30c8d8
+- Gästeverzeichnis (gaesteverzeichnis): vorname[string/text], nachname[string/text], email[string/email], telefon[string/tel], firma[string/text], position[string/text], notizen_gast[string/textarea]
